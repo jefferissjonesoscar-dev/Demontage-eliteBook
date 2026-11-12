@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Démontage — l’intérieur d’un portable, jusqu’à un seul cœur</title>
+<meta name="theme-color" content="#07080c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/hud.css">
+</head>
+<body>
+
+<div id="stage">
+  <canvas id="gl" role="img" aria-label="Portable en 3D qui se démonte au défilement, du châssis jusqu’à un seul cœur du processeur"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div id="hud"></div>
+  <p class="no-gl-msg">Cette page nécessite WebGL. Essayez une version récente de Chrome, Firefox, Safari ou Edge.</p>
+</div>
+
+<div id="track" aria-hidden="true"></div>
+<div id="loader" aria-hidden="true"><span></span></div>
+
+<script src="../js/vendor/react.production.min.js"></script>
+<script src="../js/vendor/react-dom.production.min.js"></script>
+<script src="../js/vendor/three.bundle.min.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/textures.js"></script>
+<script src="../js/laptop.js"></script>
+<script src="../js/scene.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
